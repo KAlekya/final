@@ -60,3 +60,10 @@ steps:
 
 
       print('Hello world 2')
+
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      g++ hello.cpp
+      ./a.out
